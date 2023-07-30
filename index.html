@@ -1,1 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
 
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./favicon-32x32.png" type="image/x-icon" />
+  <link rel="stylesheet" href="./index.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+  <title>Clase UNO</title>
+</head>
+
+<body>
+  <nav>
+    <p>Calculate Working Hours</p>
+    <div class="containerMenu">
+      <input type="checkbox" class="hamburguesa" id="menu-hamburguesa">
+      <label for="menu-hamburguesa"></label>
+      <ul class="ul">
+        <li><a href="index.html">Mode</a></li>
+        <li class="li"><a class="ham" href="#">Inicio</a></li>
+        <li class="li"><a class="ham" href="#">Acerca de</a></li>
+        <li class="li"><a class="ham" href="#">Contacto</a></li>
+      </ul>
+    </div>
+
+  </nav>
+  <div class="container">
+
+    <div class="containerContc">
+    <h2 class="Subtitulo">Calcular el pago de un trabajador </h2>
+    <div class="containerDoc">
+      <div class="izquierda">
+        <img src="./photo.jpg" alt="">
+      </div>
+      <div class="derech">
+        <div class="register">
+          <h2>Datos</h2>
+          <form>
+            <label for="name">ID del trabajador:</label>
+            <input type="text" id="name" name="ID" placeholder="34532.." required>
+
+            <label for="email">Tipo de Turno:</label>
+            <select id="frutas">
+              <option value="Turno">Turno...</option>
+              <option value="Mixto">Mixto</option>
+              <option value="Diurno">Diurno</option>
+              <option value="Nocturno">Nocturno</option>
+              
+            </select>
+
+            <label for="frutas">Tipo de trabajador</label>
+            <select id="frutas">
+              <option value="Trabajador">Trabajador..</option>
+              <option value="Contador">Contador</option>
+              <option value="Diurno">Diurno</option>
+              <option value="Nocturno">Nocturno</option>
+            </select>
+            <label for="password">Horas Trabajadas</label>
+            <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" required>
+            
+            <label>¿ Horas Extras?</label>
+            <div>
+                <label>Si <input type="radio" name="opc"></label>
+                <label>No <input type="radio" name="opc"></label>
+                
+            </div>
+            <input type="text" placeholder="2" disabled>
+            <input type="submit" value="Enviar">
+                      </form>
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <p>Este es el footer de mi sitio web</p>
+      <p>Derechos reservados © 2023</p>
+    </div>
+  </footer>
+</body>
+
+  </html>
+        
