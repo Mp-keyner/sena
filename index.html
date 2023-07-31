@@ -15,7 +15,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
-  <title>Clase UNO</title>
+  <title>Calculate Working Hours</title>
 </head>
 
 <body>
@@ -27,8 +27,6 @@
       <ul class="ul">
         <li><a href="index.html">Mode</a></li>
         <li class="li"><a class="ham" href="#">Inicio</a></li>
-        <li class="li"><a class="ham" href="#">Acerca de</a></li>
-        <li class="li"><a class="ham" href="#">Contacto</a></li>
       </ul>
     </div>
 
@@ -39,42 +37,54 @@
     <h2 class="Subtitulo">Calcular el pago de un trabajador </h2>
     <div class="containerDoc">
       <div class="izquierda">
-        <img src="./photo.jpg" alt="">
+        <img src="https://raw.githubusercontent.com/Mp-keyner/sena/main/grupo-personas-trabajando-juntas_52683-50967.jpg" alt="">
       </div>
       <div class="derech">
         <div class="register">
           <h2>Datos</h2>
-          <form>
-            <label for="name">ID del trabajador:</label>
-            <input type="text" id="name" name="ID" placeholder="34532.." required>
+          <form action="index.php" method="post">
+            <div class="formHijo">
+              <label for="name">ID del trabajador:</label>
+            <input type="text" id="name" name="ID" placeholder="ID del trabajador" required>
+            </div>
 
-            <label for="email">Tipo de Turno:</label>
-            <select id="frutas">
-              <option value="Turno">Turno...</option>
+            <div class="formHijo">
+              <label for="email">Tipo de Turno:</label>
+            <select id="frutas" name="turno" required>
+              <option value="Turno">....</option>
               <option value="Mixto">Mixto</option>
               <option value="Diurno">Diurno</option>
               <option value="Nocturno">Nocturno</option>
               
             </select>
-
-            <label for="frutas">Tipo de trabajador</label>
-            <select id="frutas">
-              <option value="Trabajador">Trabajador..</option>
-              <option value="Contador">Contador</option>
-              <option value="Diurno">Diurno</option>
-              <option value="Nocturno">Nocturno</option>
-            </select>
-            <label for="password">Horas Trabajadas</label>
-            <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" required>
-            
-            <label>¿ Horas Extras?</label>
-            <div>
-                <label>Si <input type="radio" name="opc"></label>
-                <label>No <input type="radio" name="opc"></label>
-                
             </div>
-            <input type="text" placeholder="2" disabled>
-            <input type="submit" value="Enviar">
+
+            <div class="formHijo">
+              <label for="frutas">Tipo de trabajador</label>
+            <select id="frutas" name="trabajo" required>
+              <option value="Trabajador">....</option>
+              <option value="Contador">Contador</option>
+              <option value="Analista">Analista</option>
+              <option value="Marketing">Marketing</option>
+            </select>
+            </div>
+
+            <div class="formHijo">
+              <label for="password">Horas Trabajadas</label>
+            <input type="text" id="password" name="H_trabajo" placeholder="Horas de trabajo" required>
+            </div>
+            
+            <div class="formHijo">
+             <div>
+              <label>¿ Horas Extras?</label>
+              <div>
+                 <label>Si <input type="radio" name="opc" value="si" id="opcSi"></label>
+  <label>No <input type="radio" name="opc" value="no" id="opcNo"></label>
+              </div>
+             </div>
+<input type="text" placeholder="Horas de trabajo extras" name="H_extras" id="inputHorasExtras">
+            </div>
+            <input type="submit" value="Enviar" class="formHijo">
                       </form>
         </div>
 
@@ -89,7 +99,7 @@
       <p>Derechos reservados © 2023</p>
     </div>
   </footer>
+  <script src="index.js"></script>
 </body>
 
   </html>
-        
